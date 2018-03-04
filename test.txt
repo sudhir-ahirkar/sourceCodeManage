@@ -402,3 +402,304 @@ Changes to be committed:
 
 Sudhir@HP /e/mylocalrepo (master)
 $
+===================================================================================================================================
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git add .gitignore
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   test.txt
+
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git add test.txt
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git config --global user.name sudhir-ahirkar
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git config --global user.email sudhir.ahirkar28@gmail.com
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   test.txt
+
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git commit -m "initial commit"
+[master (root-commit) f2690e5] initial commit
+ 2 files changed, 406 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 test.txt
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git log
+commit f2690e54c3cef5d1f85722763c7fc6cf3aefd7e9
+Author: sudhir-ahirkar <sudhir.ahirkar28@gmail.com>
+Date:   Sun Mar 4 16:52:43 2018 +0530
+
+    initial commit
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git log
+commit f2690e54c3cef5d1f85722763c7fc6cf3aefd7e9
+Author: sudhir-ahirkar <sudhir.ahirkar28@gmail.com>
+Date:   Sun Mar 4 16:52:43 2018 +0530
+
+    initial commit
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git pushed
+git: 'pushed' is not a git command. See 'git --help'.
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and integrate with another repository or a local branch
+
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository us
+ing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git remote -v
+myorigin        https://github.com/sudhir-ahirkar/sourceCodeManage.git (fetch)
+myorigin        https://github.com/sudhir-ahirkar/sourceCodeManage.git (push)
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git push myorigin master
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git push myorigin master
+fatal: unable to access 'https://github.com/sudhir-ahirkar/sourceCodeManage.git/
+': error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol versi
+on
+
+Sudhir@HP /e/mylocalrepo (master)
+$
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git push myorigin master
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git push myorigin master
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git push myorigin master
+fatal: unable to access 'https://github.com/sudhir-ahirkar/sourceCodeManage.git/
+': error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol versi
+on
+
+Sudhir@HP /e/mylocalrepo (master)
+$
+
+Sudhir@HP /e/mylocalrepo (master)
+$ ssh-keygen -t rsa -c sudhir.ahirkar28@gmail.com
+Too many arguments.
+Usage: ssh-keygen [options]
+Options:
+  -a trials   Number of trials for screening DH-GEX moduli.
+  -B          Show bubblebabble digest of key file.
+  -b bits     Number of bits in the key to create.
+  -C comment  Provide new comment.
+  -c          Change comment in private and public key files.
+  -e          Convert OpenSSH to RFC 4716 key file.
+  -F hostname Find hostname in known hosts file.
+  -f filename Filename of the key file.
+  -G file     Generate candidates for DH-GEX moduli.
+  -g          Use generic DNS resource record format.
+  -H          Hash names in known_hosts file.
+  -i          Convert RFC 4716 to OpenSSH key file.
+  -l          Show fingerprint of key file.
+  -M memory   Amount of memory (MB) to use for generating DH-GEX moduli.
+  -N phrase   Provide new passphrase.
+  -P phrase   Provide old passphrase.
+  -p          Change passphrase of private key file.
+  -q          Quiet.
+  -R hostname Remove host from known_hosts file.
+  -r hostname Print DNS resource record.
+  -S start    Start point (hex) for generating DH-GEX moduli.
+  -T file     Screen candidates for DH-GEX moduli.
+  -t type     Specify type of key to create.
+  -v          Verbose.
+  -W gen      Generator to use for generating DH-GEX moduli.
+  -y          Read private key file and print public key.
+
+Sudhir@HP /e/mylocalrepo (master)
+$ ssh-keygen -t rsa -c "sudhir.ahirkar28@gmail.com"
+Too many arguments.
+Usage: ssh-keygen [options]
+Options:
+  -a trials   Number of trials for screening DH-GEX moduli.
+  -B          Show bubblebabble digest of key file.
+  -b bits     Number of bits in the key to create.
+  -C comment  Provide new comment.
+  -c          Change comment in private and public key files.
+  -e          Convert OpenSSH to RFC 4716 key file.
+  -F hostname Find hostname in known hosts file.
+  -f filename Filename of the key file.
+  -G file     Generate candidates for DH-GEX moduli.
+  -g          Use generic DNS resource record format.
+  -H          Hash names in known_hosts file.
+  -i          Convert RFC 4716 to OpenSSH key file.
+  -l          Show fingerprint of key file.
+  -M memory   Amount of memory (MB) to use for generating DH-GEX moduli.
+  -N phrase   Provide new passphrase.
+  -P phrase   Provide old passphrase.
+  -p          Change passphrase of private key file.
+  -q          Quiet.
+  -R hostname Remove host from known_hosts file.
+  -r hostname Print DNS resource record.
+  -S start    Start point (hex) for generating DH-GEX moduli.
+  -T file     Screen candidates for DH-GEX moduli.
+  -t type     Specify type of key to create.
+  -v          Verbose.
+  -W gen      Generator to use for generating DH-GEX moduli.
+  -y          Read private key file and print public key.
+
+Sudhir@HP /e/mylocalrepo (master)
+$ ssh-keygen -t rsa -C "sudhir.ahirkar28@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Sudhir/.ssh/id_rsa):
+Created directory '/c/Users/Sudhir/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Sudhir/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Sudhir/.ssh/id_rsa.pub.
+The key fingerprint is:
+84:30:d1:16:4a:4e:57:f5:9a:da:2f:79:c3:be:4b:e1 sudhir.ahirkar28@gmail.com
+
+Sudhir@HP /e/mylocalrepo (master)
+$ cd .ssh
+sh.exe": cd: .ssh: No such file or directory
+
+Sudhir@HP /e/mylocalrepo (master)
+$ cd c:
+
+Sudhir@HP /c
+$ cd .ssh
+sh.exe": cd: .ssh: No such file or directory
+
+Sudhir@HP /c
+$ cd Users
+
+Sudhir@HP /c/Users
+$ cd Sudhir
+
+Sudhir@HP ~
+$ cd .ssh
+
+Sudhir@HP ~/.ssh
+$ clip < id_rsa.pub
+
+Sudhir@HP ~/.ssh
+$ git remote remove myorigin
+fatal: Not a git repository (or any of the parent directories): .git
+
+Sudhir@HP ~/.ssh
+$ git remote remove myorigin
+fatal: Not a git repository (or any of the parent directories): .git
+
+Sudhir@HP ~/.ssh
+$
