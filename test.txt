@@ -703,3 +703,60 @@ fatal: Not a git repository (or any of the parent directories): .git
 
 Sudhir@HP ~/.ssh
 $
+======================================================================================================================================
+Sudhir@HP /e/mylocalrepo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+        modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ram.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git add --all
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        new file:   ram.txt
+        modified:   test.txt
+
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git commit -m "ram.txt added"
+[master 1032070] ram.txt added
+ 3 files changed, 301 insertions(+), 1 deletion(-)
+ create mode 100644 ram.txt
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git push myorigin master
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of know
+n hosts.
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 3.64 KiB | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To git@github.com:sudhir-ahirkar/sourceCodeManage.git
+ * [new branch]      master -> master
+
+Sudhir@HP /e/mylocalrepo (master)
+$ git branch
+* master
